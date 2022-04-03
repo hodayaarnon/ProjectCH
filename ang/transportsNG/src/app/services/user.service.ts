@@ -10,7 +10,7 @@ export class UserService {
   constructor(private myhttp: HttpClient) { }
 
   lUser: Array<User> = new Array<User>()
-  url = "http://localhost:53684/api/users/"
+  url = "http://localhost:9894/api/users/"
 
   currentUser: User = new User()
   isConect:boolean=false

@@ -13,71 +13,56 @@ import { Community } from 'src/app/classes/community';
 })
 export class ConnectComponent implements OnInit {
 
-  constructor(public userService:UserService, public router: Router, public comService:CommunitiesService) { }
+  constructor(public userService: UserService, public router: Router, public comService: CommunitiesService) { }
 
   ngOnInit(): void {
+
   }
 
-  
-  userPassword=""
-  userEmail=""
+
+  userPassword = ""
+  userEmail = ""
 
 
 
-  login()
-  {
+  login() {
     this.GetUserByEmailAndPassword();
   }
 
-  GetUserByEmailAndPassword()
-  {
+  GetUserByEmailAndPassword() {
     this.userService.GetUserByEmailAndPassword(this.userEmail, this.userPassword)
-    .subscribe(data=>{
-      this.userService.currentUser=data, console.log('data set '+this.userService.currentUser.UserId + data.UserId)
-      if(data==null)
-      alert("not found. try again....")
-      //this.router.navigate(['/NavComponent/SignUpComponent'])
-      else
-      {//this.setUser();
-        console.log('entered setUser')
-     // this.selectCommunity()
-    }
-    
-    }, error=>{console.log('fail: GetUserByEmailAndPassword')});
-    
-    //this.setUser()
-    
+      .subscribe(data => {
+        this.userService.currentUser = data, console.log(data)
+        if (data == null)
+          alert("not found. try again....")
+        //this.router.navigate(['/NavComponent/SignUpComponent'])
+        else {
+          this.setUser();
+          this.findAllCommunities();
+        }
+      }, error => { console.log('fail: GetUserByEmailAndPassword') });
   }
- public setUser()
-  {
-    console.log('entered setUser f')
-    this.comService.currentCommunity=null
-    this.comService.comArray=new Array<Community>()
-    this.userService.isConect=true
+  public setUser() {
+    this.comService.currentCommunity = undefined
+    this.comService.comArray = new Array<Community>()
+    this.userService.isConect = true
     console.log(this.userService.currentUser);
     //this.router.navigate(['/']);
-    console.log('entered select')
-    this.selectCommunity();
-    
   }
 
- public selectCommunity()
-  {
-      //בסרויס קהילות צריך להגדיר משתנה קהילה ננוכחית
-      console.log('entered select f') 
-      console.log(this.userService.currentUser.UserId+" this.userService.currentUse")
-      if(this.userService.currentUser.UserId != undefined)
-        this.comService.allUserCommunities(this.userService.currentUser.UserId)
-        .subscribe(data=>{this.f(data)}, e=>{console.log('allUserCommunities failed!...')})
-        
+  public findAllCommunities() {
+    //בסרויס קהילות צריך להגדיר משתנה קהילה ננוכחית
+
+    if (this.userService.currentUser.Userid != undefined)
+      this.comService.allUserCommunities(this.userService.currentUser.Userid)
+        .subscribe(data => { this.comService.comArray = data }, e => { console.log('allUserCommunities failed!...') })
+
   }
-  f(data:any)
-  { 
-    debugger;
-    console.log(this.comService.currentCommunity==null && this.userService.currentUser!=undefined+"kkkk");
-    console.log(this.comService.comArray+"kkhhg")
-    console.log(data)
-    this.comService.comArray=data
-   
+
+  chooseCommunity(com: Community) {
+    if (com == null)
+      return;
+    this.comService.currentCommunity = com;
+    console.log(this.comService.currentCommunity.communityName)
   }
 }

@@ -4,7 +4,7 @@
     <div class="row g-3 align-items-center">
     <div class="mb-3">
       <label for="name" class="form-label" >Email</label>
-      <input type="email" class="form-control" id="name" [(ngModel)]="userEmail" name="name">
+      <input type="email" class="form-control" id="#name" #name="ngModel" [(ngModel)]="userEmail"  name="name">
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -17,11 +17,12 @@
   </form>
 
   <div *ngIf="this.comService.currentCommunity==null && this.userService.currentUser!=undefined">
-    <div *ngFor="let com of this.comService.comArray">
-      {{com.CommunityName}}
-      {{com.CommunityId}}
+    <div  *ngFor="let com of this.comService.comArray" >
+      <!-- {{this.comService.comArray[0].communityName}} -->
+      <div (click)="chooseCommunity(com)">
+        {{com.communityName}} 
+        {{com.Descriptions}}
+      </div>
     </div>
+    <hr>
   </div>
-  {{comService.comArray}}
-  {{comService.comArray.length}}
-  {{userService.currentUser.UserPassword}}
