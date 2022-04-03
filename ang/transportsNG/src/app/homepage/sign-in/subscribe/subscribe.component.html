@@ -1,0 +1,47 @@
+<style>
+  label{
+left: 10pc !important;
+  }
+  .marg{
+      margin: 2rem;
+  }
+  </style>
+  <div class="marg">
+  <form class="text-center border border-light p-5" (ngSubmit)="check()">
+    <div class="col-md-6">
+        <input type="text" name="first" class="form-control" id="inputEmail4" placeholder="firstname" [(ngModel)]="userServise.firstname">
+      </div>
+      <div class="col-md-6">
+        <input type="text" name="last" class="form-control" id="inputPassword4" placeholder="lastname" [(ngModel)]="userServise.lastname">
+      </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" name="useremail"
+      required pattern="[A-Za-z0-9.^ @]*@[A-Za-z.^ @]*" [(ngModel)]="userServise.email">
+      <div class="invalid-feedback">Email address is invalid</div>
+    </div>
+    <div class="col-md-6">
+      <input type="password" name="password" class="form-control" id="inputPassword4" minlength="5" 
+      maxlength="16" placeholder="Password" [(ngModel)]="userServise.password">
+      <div class="invalid-feedback">password is invalid</div>
+    </div>
+    <div class="col-12">
+      <input type="text" name="Address" class="form-control" id="inputAddress" placeholder="Address" [(ngModel)]="userServise.address">
+    </div>
+
+    <div class="col-md-3">
+      <input type="text" name="city" class="form-control" id="inputCity" placeholder="city" [(ngModel)]="userServise.city">
+    </div>
+    <div class="col-md-3">
+      <input type="text" name="country" class="form-control" id="inputCountry" placeholder="country" [(ngModel)]="userServise.country">
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="postalcode" class="form-control" id="inputPostalcode" placeholder="postalcode" [(ngModel)]="userServise.postalcode">
+    </div>
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+      
+
+    </div>
+  </form>
+</div>

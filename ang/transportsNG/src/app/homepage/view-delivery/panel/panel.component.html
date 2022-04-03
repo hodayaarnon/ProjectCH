@@ -1,0 +1,57 @@
+<p id="border">panel works!</p>
+<!-- 
+<div
+  app-detailsonpanel
+  routerLink="../viewdelivery//viewdetailsofdelivery"
+></div>
+<div
+  app-detailsonpanel
+  routerLink="../viewdelivery//viewdetailsofdelivery"
+></div>
+<div
+  app-detailsonpanel
+  routerLink="../viewdelivery//viewdetailsofdelivery"
+></div>
+<div
+  app-detailsonpanel
+  routerLink="../viewdelivery//viewdetailsofdelivery"
+></div> -->
+
+
+<div class="card">
+  <p-dataView #dv [value]="transportsArr" [paginator]="true" [rows]="9" >
+  <ng-template let-trans pTemplate="listItem">
+    <div class="p-col-12">
+        <div class="product-list-item">
+            <div class="product-list-detail">
+              
+                
+                 <div class="product-description">
+                   <div class="product-name">{{trans.source}} 
+                     <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+                {{trans.destination}}</div>
+                {{trans.description}}
+                <div>weight: {{trans.weight}}</div>
+              </div>
+                
+                 <i class="pi pi-tag product-category-icon"></i><span class="product-category">{{trans.description}}</span> 
+            </div>
+            <div class="product-list-action">
+              <span>execute until</span>
+                <span class="product-price">{{trans.deadline |date:'short'}}</span>
+                <button routerLink="../viewdelivery//viewdetailsofdelivery" pButton pRipple type="button" label="Info" class="p-button-raised p-button-info"></button>
+                
+                
+                <span >{{trans.weight}}</span> 
+            </div>
+        </div>
+    </div>
+    <hr>
+</ng-template>
+
+</p-dataView>
+
+</div>

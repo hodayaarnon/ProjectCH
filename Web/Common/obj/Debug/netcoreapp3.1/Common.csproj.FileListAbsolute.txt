@@ -1,0 +1,13 @@
+f:\Users\user\Documents\finalProject\WebApplication1\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+f:\Users\user\Documents\finalProject\WebApplication1\Common\bin\Debug\netcoreapp3.1\Common.runtimeconfig.json
+f:\Users\user\Documents\finalProject\WebApplication1\Common\bin\Debug\netcoreapp3.1\Common.runtimeconfig.dev.json
+f:\Users\user\Documents\finalProject\WebApplication1\Common\bin\Debug\netcoreapp3.1\Common.dll
+f:\Users\user\Documents\finalProject\WebApplication1\Common\bin\Debug\netcoreapp3.1\Common.pdb
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.dll
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.pdb
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.genruntimeconfig.cache
+f:\Users\user\Documents\finalProject\WebApplication1\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache
