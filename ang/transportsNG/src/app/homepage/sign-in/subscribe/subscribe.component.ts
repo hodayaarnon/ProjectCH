@@ -53,4 +53,9 @@ export class SubscribeComponent implements OnInit {
     // }
   }
 
+  addUser()
+  {
+    console.log(this)
+  }
+
 }

@@ -1,3 +1,5 @@
+import { RolesService } from './services/roles.service';
+import { UserDetailsService } from './services/user-details.service';
 import { CommunitiesService } from './services/communities.service';
 import { Transport } from './classes/transport';
 import { User } from './classes/user';
@@ -80,7 +82,7 @@ import {ButtonModule} from 'primeng/button';
     AppRoutingModule,
     HttpClientModule, FormsModule
   ],
-  providers: [AuthGuard, AuthServiceService, UserService, CommunitiesService],
+  providers: [AuthGuard, AuthServiceService, UserService, CommunitiesService, UserDetailsService, RolesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

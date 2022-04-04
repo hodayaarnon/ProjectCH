@@ -16,8 +16,8 @@
     </div>
   </form>
 
-  <div *ngIf="this.comService.currentCommunity==null && this.userService.currentUser!=undefined">
-    <div  *ngFor="let com of this.comService.comArray" >
+  <div *ngIf="this.userdetails.currentCommunity==null && this.userdetails.currentUser!=undefined">
+    <div  *ngFor="let com of this.userdetails.comArray" >
       <!-- {{this.comService.comArray[0].communityName}} -->
       <div (click)="chooseCommunity(com)">
         {{com.communityName}} 
