@@ -21,7 +21,7 @@ namespace webAPI.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(service.getAllCommunities());
+            return Ok(service.GetAllCommunities());
         }
         [HttpGet]
         [Route("GetUserCommunities/{id}")]
@@ -29,5 +29,12 @@ namespace webAPI.Controllers
         {
             return Ok(service.GetUserCommunities(id));
         }
+        [HttpGet]
+        [Route("GetCommunityById/{id}")]
+        public IActionResult GetCommunityById(int id)
+        {
+            return Ok(service.GetCommunityById(id));
+        }
+
     }
 }

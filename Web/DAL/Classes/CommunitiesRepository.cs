@@ -45,18 +45,19 @@ namespace DAL
         }
         public List<Communities> GetUserCommunities(int id)
         {
-            //לקבל את קוד המשתמש
-            //לקבל את קודי הקהילות שחבר בהן בפועל
-            List<Communities> communities = new List<Communities>();
-            List<Joinings> joinings = new List<Joinings>();
+            //List<Communities> communities = new List<Communities>();
+            ////var f= context.Communities.Where(c=>c.)
+            //var list = (context.Joinings.Where(j => j.Userid == id).Include(j => j.Community)).ToList();
+            //foreach (var item in list)
+            //{
+            //    communities.Add(item.Community);
+            //}
+            return (from j in context.Joinings where (j.Userid == id) select (j.Community)).ToList();
+         }
 
-            var list = (context.Joinings.Where(j => j.Userid == id).Include(j => j.Community)).ToList();
-            foreach (var item in list)
-            {
-                communities.Add(item.Community);
-            }
-            return communities;
-
+        public Communities GetCommunityById(int id)
+        {
+            return context.Communities.Find(id);
         }
     }
 }

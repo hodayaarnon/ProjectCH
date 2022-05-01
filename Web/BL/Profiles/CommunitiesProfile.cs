@@ -12,7 +12,7 @@ namespace BL.Profiles
         public CommunitiesProfile()
         {
             CreateMap<Communities, CommunitiesVM>()
-                .ForMember(c=>c.commuintyId, ops=>ops.MapFrom(c=>c.Communityid))
+                .ForMember(c=>c.communityId, ops=>ops.MapFrom(c=>c.Communityid))
                 .ForMember(c=>c.communityName, ops=>ops.MapFrom(c=>c.Communityname))
                 .ForMember(c=>c.Descriptions, ops=>ops.MapFrom(c=>c.Descriptions))
                 .ForMember(c=>c.City, ops=>ops.MapFrom(c=>c.City))

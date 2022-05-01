@@ -1,7 +1,10 @@
+import { User } from './../../../classes/user';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../../services/user.service';
 import { Router } from '@angular/router';
-import { FormsModule } from "@angular/forms";
+import { FormControl, FormGroup, FormsModule, Validators } from "@angular/forms";
+import { CommunitiesService } from 'src/app/services/communities.service';
+import { Community } from 'src/app/classes/community';
 
 @Component({
   selector: '[app-subscribe]',
@@ -13,10 +16,14 @@ export class SubscribeComponent implements OnInit {
   userMail: string = ""
   password: string = ""
 
-  constructor(public userServise: UserService, public router: Router) { }
+  
+  subscribeUser:User=new User()
+
+  constructor(public userServise: UserService, public router: Router, public communitiesService:CommunitiesService) { }
 
   ngOnInit(): void {
-  }
+   // this.communitiesService.getAllCommunities().subscribe(data=>{this.allCommunities=data}, e=>{console.log('problem with allCommunities')})
+ }
 
   check()
   {
@@ -55,7 +62,39 @@ export class SubscribeComponent implements OnInit {
 
   addUser()
   {
+    this.subscribeUser.Userfirstname=this.myFormGroup.get('firstname')?.value;
+    this.subscribeUser.Userlastname=this.myFormGroup.get('lastname')?.value;
+    this.subscribeUser.City=this.myFormGroup.get('city')?.value;
+    this.subscribeUser.Email=this.myFormGroup.get('email')?.value;
+    this.subscribeUser.Street=this.myFormGroup.get('street')?.value;
+    this.subscribeUser.Origin=this.myFormGroup.get('housenumber')?.value;
+    this.subscribeUser.Adresslat=this.myFormGroup.get('latitude')?.value;
+    this.subscribeUser.Adresslng=this.myFormGroup.get('longitude')?.value;
+    this.subscribeUser.Postalcode=this.myFormGroup.get('postalcode')?.value;
+    this.subscribeUser.Userpassword=this.myFormGroup.get('password')?.value;
+    this.subscribeUser.Userid=0;
+  
     console.log(this)
+    this.userServise.addUser(this.subscribeUser).subscribe(data=>{console.log('success!')}, e=>{console.log(5794000)})
   }
 
+
+  myFormGroup:FormGroup= new FormGroup({
+    // Validators.required- require to enter a value to this input
+     //"firstname"!:new FormControl(null, [Validators.required]),
+     "firstname"!:new FormControl(null, [Validators.pattern('^[א-תa-zA-Z ]+$'), Validators.required]),
+     "lastname"!:new FormControl(null, [Validators.pattern('^[א-תa-zA-Z ]+$'), Validators.required]),
+     "email"!:new FormControl(null, [Validators.required]),
+     "password"!:new FormControl(null, [Validators.required, Validators.minLength(6), Validators.maxLength(50)]),
+     "city"!:new FormControl(null, [Validators.required]),
+     //"city"!:new FormControl(null, [Validators.required]),
+     "street"!:new FormControl(null, [Validators.required]),
+     "housenumber"!:new FormControl(null, [Validators.required]),
+     "postalcode"!:new FormControl(null, [Validators.required]),
+     "latitude"!:new FormControl(null, [Validators.required]),
+     "longitude"!:new FormControl(null, [Validators.required]),
+     
+   })
+
+  
 }

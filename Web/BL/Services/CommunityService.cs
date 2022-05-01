@@ -19,7 +19,7 @@ namespace BL.Services
             this.repo = repo;
             this.mapper = mapper;
         }
-        public List<CommunitiesVM> getAllCommunities()
+        public List<CommunitiesVM> GetAllCommunities()
         {
             List<Communities> communities = repo.GetAll();
              return mapper.Map<List<CommunitiesVM>>(communities);
@@ -33,6 +33,11 @@ namespace BL.Services
             List<Communities> communities = repo.GetUserCommunities(id);
              return mapper.Map<List<CommunitiesVM>>(communities);
 
+        }
+
+        public CommunitiesVM GetCommunityById(int id)
+        {
+            return mapper.Map<CommunitiesVM>(repo.GetCommunityById(id));
         }
     }
 }

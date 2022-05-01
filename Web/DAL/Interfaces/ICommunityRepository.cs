@@ -8,5 +8,6 @@ namespace DAL
     public interface ICommunitiesRepository:IRepository<Communities>
     {
         List<Communities> GetUserCommunities(int id);
+        Communities GetCommunityById(int id);
     }
 }

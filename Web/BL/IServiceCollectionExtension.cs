@@ -17,10 +17,14 @@ namespace BL
         {
             ser.AddScoped<ICommunitiesService, CommunitiesService>();
             ser.AddScoped<IUsersService, UsersService>();
+            ser.AddScoped<IRolesService, RolesService>();
+            ser.AddScoped<IAskstojoinService, AskstojoinService>();
            // ser.AddScoped<IUsersService, UsersService>();
             
             ser.AddAutoMapper(typeof(CommunitiesProfile));
             ser.AddAutoMapper(typeof(UsersProfile));
+            ser.AddAutoMapper(typeof(RolesProfile));
+            ser.AddAutoMapper(typeof(AskstojoinService));
             //ser.AddAutoMapper(typeof(CustomersProfile));
             //ser.AddAutoMapper(typeof(ClothesProfile));
             ser.AddRepositories(con);

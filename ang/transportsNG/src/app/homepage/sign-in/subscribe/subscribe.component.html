@@ -6,7 +6,7 @@ left: 10pc !important;
       margin: 2rem;
   }
   </style>
-  <div class="marg">
+  <!-- <div class="marg">
   <form class="text-center border border-light p-5" (ngSubmit)="check()">
     <div class="col-md-6">
         <input type="text" name="first" class="form-control" id="inputEmail4" placeholder="firstname" [(ngModel)]="userServise.firstname">
@@ -44,4 +44,108 @@ left: 10pc !important;
 
     </div>
   </form>
+</div> -->
+
+<form class="row g-3" [formGroup]="myFormGroup">
+  <div class="col-md-6">
+    <label class="form-label">first-name</label>
+    <input type="text" class="form-control"  formControlName="firstname">
+  
+  <div *ngIf="myFormGroup.get('firstname')?.invalid && myFormGroup.get('firstname')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('firstname')?.errors!['pattern']" >letters only</p>
+      <p *ngIf="myFormGroup.get('firstname')?.errors!['required']" >required field</p>
+  </div>
 </div>
+
+  <div class="col-md-6">
+    <label class="form-label">last-name</label>
+    <input type="text" class="form-control" formControlName="lastname">
+    <div *ngIf="myFormGroup.get('lastname')?.invalid && myFormGroup.get('lastname')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('lastname')?.errors!['required']" >required field</p>
+      <p *ngIf="myFormGroup.get('lastname')?.errors!['pattern']" >letters only</p>
+    </div>
+  </div>
+
+
+
+  <div class="col-12">
+    <label  class="form-label">email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder=""  formControlName="email">
+    <div *ngIf="myFormGroup.get('email')?.invalid && myFormGroup.get('email')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('email')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label  class="form-label">password</label>
+    <input type="text" class="form-control"  name="password" formControlName="password">
+    <div *ngIf="myFormGroup.get('password')?.invalid && myFormGroup.get('password')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('password')?.errors!['required']" >required field</p>
+      <p *ngIf="myFormGroup.get('password')?.errors!['minlength']" >a minimum of 6 digits is required</p>
+      <p *ngIf="myFormGroup.get('password')?.errors!['maxlength']" >a maximum of digits is 50</p>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label class="form-label">city</label>
+    <input type="text" class="form-control" name="city"formControlName="city">
+    <div *ngIf="myFormGroup.get('city')?.invalid && myFormGroup.get('city')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('city')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+
+  <div class="col-md-5">
+    <label class="form-label">street</label>
+    <input type="text" class="form-control" name="street" formControlName="street">
+    <div *ngIf="myFormGroup.get('street')?.invalid && myFormGroup.get('street')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('street')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+
+
+  <div class="col-md-1">
+    <label  class="form-label">house-number</label>
+    <input type="text" class="form-control" name="housenumber" formControlName="housenumber">
+    <div *ngIf="myFormGroup.get('housenumber')?.invalid && myFormGroup.get('housenumber')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('housenumber')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label class="form-label">postalcode</label>
+    <input type="text" class="form-control" formControlName="latitude">
+    <div *ngIf="myFormGroup.get('postalcode')?.invalid && myFormGroup.get('latitude')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('postalcode')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label class="form-label">latitude</label>
+    <input type="text" class="form-control" formControlName="postalcode">
+    <div *ngIf="myFormGroup.get('postalcode')?.invalid && myFormGroup.get('postalcode')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('postalcode')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">longitude</label>
+    <input type="number" class="form-control" formControlName="longitude">
+    <div *ngIf="myFormGroup.get('longitude')?.invalid && myFormGroup.get('longitude')?.dirty" class="alert-danger">
+      <p *ngIf="myFormGroup.get('longitude')?.errors!['required']" >required field</p>
+    </div>
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-outline-dark" (click)="addUser()">subscribe now</button>
+  </div>
+</form>
+
+<br>
+<!-- להציג רשימה של כל הקהילות והמשתמש יבחר לאיזה קהילה הוא רוצה להצטרף -->
+
+
+

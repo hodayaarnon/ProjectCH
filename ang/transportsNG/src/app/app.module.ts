@@ -38,9 +38,9 @@ import { AuthGuard } from './auth.guard';
 import {DataViewModule} from 'primeng/dataview';
 import { DeliverieshistoryComponent } from './homepage/view-history/deliverieshistory/deliverieshistory.component';
 import { VolunteeringhistoryComponent } from './homepage/view-history/volunteeringhistory/volunteeringhistory.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
-
+//import { SheetJSComponent } from './sheet.component';
 //import {MenuItem, PrimeIcons} from 'primeng/api';
 //import {DataViewModule} from 'primeng/dataview';
 @NgModule({
@@ -69,14 +69,15 @@ import {ButtonModule} from 'primeng/button';
     DetailsonpanelComponent,
     ViewdeliverycontentComponent,
     EmptyComponent,
-    
+    //SheetJSComponent,
    
     DeliverieshistoryComponent,
         VolunteeringhistoryComponent
   ],
   imports: [
     BrowserModule,
-   
+    FormsModule,
+    ReactiveFormsModule,
     ButtonModule,
     DataViewModule,
     AppRoutingModule,

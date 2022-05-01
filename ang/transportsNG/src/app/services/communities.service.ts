@@ -16,6 +16,10 @@ export class CommunitiesService {
   {
     return this.http.get<Array<Community>>(this.url+"GetUserCommunities/"+userid);
   }
+  getAllCommunities():Observable<Array<Community>>
+  {
+    return this.http.get<Array<Community>>(this.url);
+  }
   
   getCommunityById(comid:number)
   {

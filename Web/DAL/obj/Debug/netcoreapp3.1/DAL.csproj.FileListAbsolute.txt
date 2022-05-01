@@ -11,3 +11,16 @@ f:\Users\user\Documents\finalProject\WebApplication1\DAL\obj\Debug\netcoreapp3.1
 f:\Users\user\Documents\finalProject\WebApplication1\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
 f:\Users\user\Documents\finalProject\WebApplication1\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache
 f:\Users\user\Documents\finalProject\WebApplication1\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+f:\Users\user\Documents\finalProject\allFromAbove\Web\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache

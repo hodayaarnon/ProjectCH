@@ -5471,11 +5471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\WEB API.csproj",
+      "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\WEB API.csproj",
       "projectName": "WEB API",
-      "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\WEB API.csproj",
+      "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\WEB API.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\obj\\",
+      "outputPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5499,8 +5499,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj": {
-              "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj"
+            "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj": {
+              "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj"
             }
           }
         }

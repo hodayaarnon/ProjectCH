@@ -1,4 +1,5 @@
 ﻿using BL.Services;
+using Common.modelsVM;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -41,9 +42,10 @@ namespace webAPI.Controllers
         }
 
         // PUT api/<UsersController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("addUser")]
+        public void Put([FromBody] UsersVM u)
         {
+            service.AddUser(u);
         }
 
         // DELETE api/<UsersController>/5
@@ -53,7 +55,7 @@ namespace webAPI.Controllers
         }
 
         [HttpGet]
-        [Route("GetUserByEmail")]
+        [Route("GetUserByEmail/{Email}")]
         public IActionResult GetUserByEmail(string Email)
         {
             return Ok(service.GetUserByEmail(Email));
@@ -65,6 +67,7 @@ namespace webAPI.Controllers
             return Ok(service.GetUserByEmail(Email));
         }
 
-       
+      
+
     }
 }

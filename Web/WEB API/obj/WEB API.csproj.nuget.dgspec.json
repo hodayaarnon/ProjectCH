@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\WEB API.csproj": {}
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\WEB API.csproj": {}
   },
   "projects": {
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj": {
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj",
+        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj",
+        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\obj\\",
+        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -35,11 +35,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj": {
-                "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj"
+              "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj": {
+                "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj"
               },
-              "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\DAL\\DAL.csproj": {
-                "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\DAL\\DAL.csproj"
+              "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\DAL\\DAL.csproj": {
+                "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\DAL\\DAL.csproj"
               }
             }
           }
@@ -102,14 +102,14 @@
         }
       }
     },
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj": {
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj",
+        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj",
+        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\obj\\",
+        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -193,14 +193,14 @@
         }
       }
     },
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\DAL\\DAL.csproj": {
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\DAL\\DAL.csproj",
+        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\DAL\\DAL.csproj",
+        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\DAL\\obj\\",
+        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -284,14 +284,14 @@
         }
       }
     },
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\WEB API.csproj": {
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\WEB API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\WEB API.csproj",
+        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\WEB API.csproj",
         "projectName": "WEB API",
-        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\WEB API.csproj",
+        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\WEB API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\WEB API\\obj\\",
+        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\WEB API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -315,8 +315,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj": {
-                "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\BL\\BL.csproj"
+              "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj": {
+                "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\BL\\BL.csproj"
               }
             }
           }

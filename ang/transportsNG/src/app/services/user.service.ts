@@ -8,6 +8,7 @@ import { User } from './../classes/user';
 export class UserService {
 
   url = "http://localhost:9894/api/users/";
+  subscribeUser:User= new User()
 
   constructor(private myhttp: HttpClient) { }
 
@@ -16,11 +17,17 @@ export class UserService {
     return this.myhttp.get<User>(this.url + "GetUserByEmailAndPassword" + "?email=" + email + "&password=" + password);
   }
 
+  addUser(user:User)
+  {
+    return this.myhttp.put<User>(this.url + "addUser", user);
+  }
 
   GetUserRolesInCommunity(userid:number, comid:number)
   {
     
   }
+
+
   
 }
 //http://localhost:53684/api/users/GetUserByEmailAndPassword?email=danier@gmail.com&password=Dan8787

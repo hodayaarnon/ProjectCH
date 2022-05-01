@@ -7,7 +7,9 @@ namespace BL
 {
     public interface ICommunitiesService
     {
-        List<CommunitiesVM> getAllCommunities();
+        List<CommunitiesVM> GetAllCommunities();
         List<CommunitiesVM> GetUserCommunities(int id);
+        CommunitiesVM GetCommunityById(int id);
+        
     }
 }

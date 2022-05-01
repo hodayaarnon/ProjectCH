@@ -1,3 +1,15 @@
-<p>join-community works!</p>
 <button routerLink="../">Back to home page</button>
 <div *ngIf="checkRoute('/joincommunity')">this is join community component!</div>
+<p>choose community you want joining to: </p>
+<div>
+    <div *ngFor="let com of allCommunities" (click)="addAskForm.get('communityid')?.setValue(com.communityId); addAskForm.get('communityname')?.setValue(com.communityName)">
+      <p>{{com.communityName}}</p>
+      <p>{{com.Descriptions}}</p>
+      <img src={{com.Descriptions}}>
+    </div>
+    join as manager
+    <input type="checkbox" formControlName="asmanager" [value]="addAskForm.get('asmanager')" (change)="addAskForm.get('asmanager')?.setValue(!
+    
+    addAskForm.get('asmanager')?.value)">
+  </div>
+  <button (click)="addAsk()">add </button>

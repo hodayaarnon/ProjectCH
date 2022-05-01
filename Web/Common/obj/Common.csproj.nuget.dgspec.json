@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj": {}
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj": {}
   },
   "projects": {
-    "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj": {
+    "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj",
+        "projectUniqueName": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\Common.csproj",
+        "projectPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\WebApplication1\\Common\\obj\\",
+        "outputPath": "f:\\Users\\user\\Documents\\finalProject\\allFromAbove\\Web\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

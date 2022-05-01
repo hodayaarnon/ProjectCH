@@ -6,7 +6,7 @@ namespace Common
 {
    public class CommunitiesVM
     {
-        public int commuintyId { get; set; }
+        public int communityId { get; set; }
         public string communityName { get; set; }
         public bool? Requiredpremit { get; set; }
         public string Descriptions { get; set; }

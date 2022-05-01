@@ -1,4 +1,5 @@
 ﻿using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,17 +36,24 @@ namespace DAL.Classes
         {
             return context.Users.Find(id);
         }
-        public Users GetUserByEmail(string Email)
+        public Users GetUserByEmail(string em)
         {
-            return context.Users.Where(u => u.Email.Trim() == Email).FirstOrDefault();
+            //return context.Users.Where(u => u.Email.Trim() == Email).FirstOrDefault();
+           return context.Users.FromSqlInterpolated<Users>($"EXECUTE dbo.sp_getUserByEmail '{em}'").IgnoreQueryFilters().Include(c => c.Communities).AsEnumerable().LastOrDefault(); 
+       
+           // return  context.Users.FromSqlRaw<Users>($"EXECUTE select * from Users'{em}'").AsEnumerable().Include(c=>c.Communities).AsEnumerable().LastOrDefault();
+           // return context.Users.FromSqlRaw($"EXECUTE dbo.sp_getUserByEmail '{em}'").AsEnumerable().LastOrDefault();
+           // return h;
         }
         public Users GetUserByEmailAndPassword(string Email, string password)
         {
-            return context.Users.Where(u => u.Email.Trim() == Email && u.Userpassword.Trim() == password).FirstOrDefault();
+            return context.Users.FromSqlRaw<Users>($"EXECUTE dbo.sp_getUserByEmailAndPassword '{Email}', '{password}'").AsEnumerable().LastOrDefault();
+            //return context.Users.Where(u => u.Email.Trim() == Email && u.Userpassword.Trim() == password).FirstOrDefault();
         }
 
         public void Update(Users obj)
         {
+            
             if (GetById(obj.Userid) != null)
                 context.Users.Update(obj);
 
