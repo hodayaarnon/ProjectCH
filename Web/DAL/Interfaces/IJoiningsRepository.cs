@@ -5,7 +5,8 @@ using System.Text;
 
 namespace DAL.Interfaces
 {
-    public interface IAskstojoinRepository: IRepository<Askstojoin>
+   public interface IJoiningsRepository:IRepository<Joinings>
     {
+        public void Create(IEnumerable<Joinings> objs);
     }
 }

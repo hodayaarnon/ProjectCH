@@ -17,7 +17,8 @@ namespace DAL
             ser.AddScoped<ICommunitiesRepository, CommunitiesRepository>();
             ser.AddScoped<IUsersRepository, UsersRepository>();
             ser.AddScoped<IRolesRepository, RolesRepository>();
-            ser.AddScoped<IAskstojoinRepositpry, AskstojoinRepositpry>();
+            ser.AddScoped<IAskstojoinRepository, AskstojoinRepository>();
+            ser.AddScoped<IJoiningsRepository, JoiningsRepository>();
             ser.AddDbContext<DBContext>(options => options.UseSqlServer("Data Source=den1.mssql8.gear.host;Persist Security Info=True;User ID=transportsdb;Password=Lq1f7C-BGo~N"));
             return ser;
         }

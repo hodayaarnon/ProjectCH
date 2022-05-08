@@ -12,6 +12,8 @@ namespace BL.Services
         UsersVM GetById(int id);
         void DeleteUser(int id);
         void AddUser(UsersVM c);
+        void AddUsers(IEnumerable<UsersVM> c);
+
         UsersVM GetUserByEmail(string Email);
         UsersVM GetUserByEmailAndPassword(string Email, string password);
     }

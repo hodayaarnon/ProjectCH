@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/classes/user';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-manage-community',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManageCommunityComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userServise: UserService) { }
+
+  
 
   ngOnInit(): void {
+    
   }
 
+ 
 }

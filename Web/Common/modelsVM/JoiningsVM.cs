@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace DAL.Models
+namespace Common.modelsVM
 {
-    public partial class Joinings
+   public class JoiningsVM
     {
         public int Joiningid { get; set; }
         public int? Userid { get; set; }
@@ -11,8 +12,5 @@ namespace DAL.Models
         public int? Roleid { get; set; }
         public DateTime? Joinnigdate { get; set; }
         public bool? Isavalid { get; set; }
-        public virtual Communities Community { get; set; }
-        public virtual Roles Role { get; set; }
-        public virtual Users User { get; set; }
     }
 }

@@ -7,11 +7,11 @@ using System.Text;
 
 namespace DAL.Classes
 {
-    public class AskstojoinRepositpry : IAskstojoinRepositpry
+    public class AskstojoinRepository : IAskstojoinRepository
     {
         DBContext context;
 
-        public AskstojoinRepositpry(DBContext context)
+        public AskstojoinRepository(DBContext context)
         {
             this.context = context;
         }
@@ -29,7 +29,7 @@ namespace DAL.Classes
 
         public List<Askstojoin> GetAll()
         {
-            return context.Askstojoin.ToList();
+           return context.Askstojoin.ToList();
         }
 
         public Askstojoin GetById(int id)

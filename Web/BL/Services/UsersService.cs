@@ -8,6 +8,7 @@ using System.Text;
 
 namespace BL.Services
 {
+
     public class UsersService : IUsersService
     {
         IMapper mapper;
@@ -21,6 +22,11 @@ namespace BL.Services
         public void AddUser(UsersVM c)
         {
             repo.Create(mapper.Map<Users>(c));
+        }
+
+        public void AddUsers(IEnumerable<UsersVM> c)
+        {
+            repo.Create(mapper.Map<IEnumerable<Users>>(c));
         }
 
         public void DeleteUser(int id)

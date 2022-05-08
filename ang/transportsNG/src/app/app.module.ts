@@ -1,3 +1,4 @@
+import { JoiningsService } from './services/joinings.service';
 import { RolesService } from './services/roles.service';
 import { UserDetailsService } from './services/user-details.service';
 import { CommunitiesService } from './services/communities.service';
@@ -40,6 +41,8 @@ import { DeliverieshistoryComponent } from './homepage/view-history/deliverieshi
 import { VolunteeringhistoryComponent } from './homepage/view-history/volunteeringhistory/volunteeringhistory.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
+import { ReadexcelDirective } from './directives/readexcel.directive';
+import { AddUsersComponent } from './homepage/add-users/add-users.component';
 //import { SheetJSComponent } from './sheet.component';
 //import {MenuItem, PrimeIcons} from 'primeng/api';
 //import {DataViewModule} from 'primeng/dataview';
@@ -54,6 +57,7 @@ import {ButtonModule} from 'primeng/button';
     JoinCommunityComponent,
     ManageCommunityComponent,
     SignInComponent,
+    AddUsersComponent,
     AddDeliveryComponent,
     ViewDetailsComponent,
     AddSuggestComponent,
@@ -72,7 +76,8 @@ import {ButtonModule} from 'primeng/button';
     //SheetJSComponent,
    
     DeliverieshistoryComponent,
-        VolunteeringhistoryComponent
+        VolunteeringhistoryComponent,
+        ReadexcelDirective
   ],
   imports: [
     BrowserModule,
@@ -83,7 +88,7 @@ import {ButtonModule} from 'primeng/button';
     AppRoutingModule,
     HttpClientModule, FormsModule
   ],
-  providers: [AuthGuard, AuthServiceService, UserService, CommunitiesService, UserDetailsService, RolesService],
+  providers: [AuthGuard, AuthServiceService, UserService, CommunitiesService, UserDetailsService, RolesService, JoiningsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

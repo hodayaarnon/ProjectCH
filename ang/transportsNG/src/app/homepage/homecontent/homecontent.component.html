@@ -1,7 +1,39 @@
-<p>homecontent works!</p>
+<!-- <p>homecontent works!</p>
 <button routerLink="../joincommunity">join community</button>
 <button routerLink="../managedelivery">manage delivery</button>
 <button routerLink="../signin">sign in</button>
 <button routerLink="../viewdelivery">view delivery</button>
 <button routerLink="../viewhistory">view history</button>
-<button routerLink="../managecommunity">managecommunity</button>
+<button routerLink="../managecommunity">managecommunity</button> -->
+
+
+<div class="nav nav-tabs nav-fill">
+
+    <!-- <div *ngFor="let i of nav"> -->
+    <button class="color nav-it nav-link" aria-current="page" href="#" routerLink="../signin"
+        routerLinkActive="active">sign in
+    </button>
+    <br><br><br><br>
+
+    <button class="color nav-it nav-link" aria-current="page" href="#" routerLink="../viewdelivery"
+        routerLinkActive="active">../view delivery
+    </button>
+    <br><br><br><br>
+
+    <button class="color nav-it nav-link" aria-current="page" href="#" routerLink="../viewhistory"
+        routerLinkActive="active">view history
+    </button>
+    <br><br><br><br>
+
+
+    <button class="color nav-it nav-link" aria-current="page" href="#" routerLink="../managedelivery"
+        routerLinkActive="active">managedelivery
+    </button>
+    <br><br><br><br>
+
+    <button *ngIf="userDetailsService.isManager" class="color nav-it nav-link" aria-current="page" href="#"
+        routerLink="../managecommunity" routerLinkActive="active">managecommunity
+    </button>
+    <br><br><br><br>
+
+</div>

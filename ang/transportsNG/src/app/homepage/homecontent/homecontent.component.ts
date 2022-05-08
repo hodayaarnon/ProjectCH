@@ -1,3 +1,4 @@
+import { UserDetailsService } from 'src/app/services/user-details.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomecontentComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userDetailsService:UserDetailsService) { }
 
   ngOnInit(): void {
   }

@@ -48,6 +48,12 @@ namespace webAPI.Controllers
             service.AddUser(u);
         }
 
+       
+        [HttpPut("addUsers")]
+        public void Put([FromBody] IEnumerable<UsersVM> ulist)
+        {
+            service.AddUsers(ulist);
+        }
         // DELETE api/<UsersController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
@@ -62,9 +68,9 @@ namespace webAPI.Controllers
         }
         [HttpGet]
         [Route("GetUserByEmailAndPassword")]
-        public IActionResult GetUserByEmailAndPassword(string Email, string password)
+        public IActionResult GetUserByEmailAndPassword(string email, string password)
         {
-            return Ok(service.GetUserByEmail(Email));
+            return Ok(service.GetUserByEmailAndPassword(email, password));
         }
 
       

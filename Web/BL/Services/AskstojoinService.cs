@@ -13,9 +13,9 @@ namespace BL.Services
     public class AskstojoinService : IAskstojoinService
     {
         IMapper mapper;
-        IAskstojoinRepositpry repo;
+        IAskstojoinRepository repo;
 
-        public AskstojoinService(IAskstojoinRepositpry repo, IMapper mapper)
+        public AskstojoinService(IAskstojoinRepository repo, IMapper mapper)
         {
             this.repo = repo;
             this.mapper = mapper;

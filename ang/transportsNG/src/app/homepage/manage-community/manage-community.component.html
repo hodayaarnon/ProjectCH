@@ -1,4 +1,55 @@
 <p>manage-community works!</p>
 <button routerLink="../">Back to home page</button>
-<h3>add many participants</h3>
-<div  app-add-users></div>
+
+<!-- <input
+  type="file"
+  appReadexcel
+  #readexcel="readexcel"
+  (eventEmitter)="DataFromEventEmitter($event)"
+/>
+
+ <ul *ngFor="let user of newUsers ">
+  <li>{{ n.Userfirstname }}</li>
+  <li>{{ n.Userlastname }}</li>
+  <li>{{ n.Email }}</li>
+  <li>{{ n.Postalcode }}</li>
+  <li>{{ n.Street }}</li>
+  <li>{{ n.City }}</li>
+  <li>{{ n.Housenumber }}</li>
+  <li>{{ n.Useridentity }}</li>
+  <li>{{ n.Addresslat}}</li>
+  <li>{{ n.Addresslng }}</li>
+  <li>{{ n.Address }}</li>
+</ul> -->
+<!-- <div class="table-responsive" *ngIf="newUsers.length>0">
+  <table class="table table-sm">
+    <thead>
+      <th>firstname</th><th>lastname</th> <th>identity</th><th>password</th><th>email</th> <th>city</th> <th>address</th> <th>street</th><th>house-number</th><th>lat</th><th>lng</th><th>postalcode</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of newUsers">
+          <th class="p-1 flex-shrink-1 bd-highlight" class="fw-normal"> {{user.Userfirstname}}</th>
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Userlastname}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Useridentity}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Userpassword}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Email}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.City}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Adress}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Street}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Housenumber}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Adresslat}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Adresslng}}</th> 
+          <th class="p-1 flex-grow-1 bd-highlight" class="fw-normal"> {{user.Postalcode}}</th> 
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<button (click)="sendAndAdd()">send add add</button>
+<h3>add many participants</h3> --> -->
+<!-- <div  app-add-users></div> -->
+<app-add-users></app-add-users>

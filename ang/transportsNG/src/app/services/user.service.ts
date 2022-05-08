@@ -22,6 +22,10 @@ export class UserService {
     return this.myhttp.put<User>(this.url + "addUser", user);
   }
 
+  addUsers(users:Array<User>)
+  {
+    return this.myhttp.put<User>(this.url + "addUsers", users);
+  }
   GetUserRolesInCommunity(userid:number, comid:number)
   {
     

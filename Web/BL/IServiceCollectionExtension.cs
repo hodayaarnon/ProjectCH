@@ -19,12 +19,14 @@ namespace BL
             ser.AddScoped<IUsersService, UsersService>();
             ser.AddScoped<IRolesService, RolesService>();
             ser.AddScoped<IAskstojoinService, AskstojoinService>();
+            ser.AddScoped<IJoiningsService, JoiningsService>();
            // ser.AddScoped<IUsersService, UsersService>();
             
             ser.AddAutoMapper(typeof(CommunitiesProfile));
             ser.AddAutoMapper(typeof(UsersProfile));
             ser.AddAutoMapper(typeof(RolesProfile));
-            ser.AddAutoMapper(typeof(AskstojoinService));
+            ser.AddAutoMapper(typeof(AskstojoinProfile));
+            ser.AddAutoMapper(typeof(JoiningsProfile));
             //ser.AddAutoMapper(typeof(CustomersProfile));
             //ser.AddAutoMapper(typeof(ClothesProfile));
             ser.AddRepositories(con);

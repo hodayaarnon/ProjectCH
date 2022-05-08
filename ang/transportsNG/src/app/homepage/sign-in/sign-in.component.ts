@@ -9,6 +9,7 @@ export class SignInComponent implements OnInit {
 
   constructor() { }
 
+  choice=0;
   ngOnInit(): void {
   }
 
